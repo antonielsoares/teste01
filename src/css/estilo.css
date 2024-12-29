@@ -203,9 +203,11 @@ header{
         display: block;
     }
     .conteudo-sobre p{
-        width: 100%;
-        margin-bottom: 35px;
-        
+        width: 96%;
+        margin-bottom: 20px;    
+    }
+    .conteudo-sobre span{
+        font-size: 13px;
     }
     .conteudo-sobre button{
         display: block;
@@ -232,10 +234,11 @@ header{
     color: gray;
     margin: 17px 0;
 }
-/*************** RESPONSIVO | SECTION | CONQUISTA  ********************
+/*************** RESPONSIVO | SECTION | CONQUISTA  ********************/
 @media screen and (max-width: 650px){
     .conquista-singo{
         border-bottom: 1px solid rgb(143, 143, 248);
         width: calc(100% / 1);
+        margin: 0 44px;
     }
-}*/
+}
