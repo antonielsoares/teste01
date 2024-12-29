@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+/*************** HEADER ********************/
+header{
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid  rgb(200, 197, 243);
+}
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    color: rgb(132, 132, 245);
+}
+.logo h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+.menu-mobile{
+    display: none;
+}
+.menu{
+    text-align: right;
+    width: 80%;
+}
+
+.menu a{
+    margin-right: 20px;
+    color: rgb(132, 132, 245);
+    text-decoration: none;
+}
+.menu a:hover{
+    color: blue;
+}
+.menu .btn-menu{
+    background-color: blue;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: white;
+}
+.menu .btn-menu:hover{
+    background-color: rgb(4, 4, 82);
+    color: white;
+    transition: 2s;
+}
+/*************** RESPONSIVO | HEADER ********************/
+@media screen and (max-width: 650px){
+    .menu{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+}
+                           /*************** SECTION | MEN ********************/
+.men{
+    background-image: url(../img/bg-02.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 550px;
+}
+.men-cta{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+.men-cta h2{
+    margin: 0 auto;
+    width: 600px;
+    color: blue;
+    font-size: 38px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.men-cta p{
+    color: blue;
+    font-size: 25px;
+    margin: 10px 0;
+}
+.men-cta button{
+    background-color: blue;
+    display: inline-block;
+    padding: 10px 17px;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.men-cta button:hover{
+    background-color: rgb(5, 5, 146);
+    transition: 1s;
+}
+.diferenciasis{
+    display: flex;
+}
+.diferencial-singo{
+    background-color: #fffffe;
+    width: calc(100% / 4);
+    padding:  60px 15px 15px 15px;
+    margin: 0 11px;
+    border-radius: 2%;
+}
+
+.diferencial-singo{
+    font-size: 20px;
+}
+.diferencial-singo h2{
+    margin: 10px 0;
+    color: rgb(3, 3, 146);
+}
+.diferencial-singo p{
+    font-size: 14px;
+    color: gray;
+    line-height: 20px;
+}
+/*************** RESPONSIVO | SECTION | MEN ********************/
+@media screen and (max-width: 650px) {
+    .diferenciasis{
+        display: inline;
+    }
+    .diferencial-singo{
+        width: 88%;
+        margin: 15px auto;
+    }
+    .men-cta h2{
+        width: 90%;
+        font-size: 25px;
+    }
+    .men-cta p{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .men-cta button{
+        padding: 8px 14px;
+        font-size: 11px;
+    }    
+}
+/*************** SECTION | SOBRE ********************/
+.chamada-sobre{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0 20px;
+}
+.chamada-sobre h2{
+    margin: 10px auto;
+    color: rgb(7, 7, 128);
+    font-size: 30px; 
+}
+.chamada-sobre p{
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+}
+.conteudo-sobre{
+    padding: 10px 20px;
+    display: flex;
+}
+.conteudo-sobre p{
+    width: calc(100% / 2);
+    color: gray;
+    font-size: 14px;
+    margin: 15px 20px;
+    line-height: 20px;
+}
+.conteudo-sobre i{
+    padding-top: 2px;
+    font-size: 22px;
+    width: 32px;
+    line-height: 20px;
+}
+.conteudo-sobre span{
+    font-size: 16px;
+}
+.conteudo-sobre button{
+    padding: 5px 25px;
+    margin-top: 30px;
+    border-radius: 4px;  
+    cursor: pointer;
+    text-transform: uppercase;  
+}
+.conteudo-sobre button:hover{
+    background-color: blue;
+    color: white;
+    transition: 0.3s;
+}
+
+/*************** RESPONSIVO | SECTION | SOBRE  ********************/
+@media screen and (max-width: 650px){
+    .conteudo-sobre{
+        display: block;
+    }
+    .conteudo-sobre p{
+        width: 100%;
+        margin-bottom: 35px;
+        
+    }
+    .conteudo-sobre button{
+        display: block;
+        margin: 30px auto;
+    }   
+}
+/*************** SECTION | CONQUISTA  ********************/
+.conquista{
+    
+    background-color: rgb(223, 241, 235);
+    
+}
+.conquista-singo{
+    margin: 50px 0;
+    text-align: center;
+    width: calc(97% / 4);
+}
+.conquista-singo h2{
+    color: blue;
+    font-size: 30px;
+}
+.conquista-singo p{
+    font-size: 17px;
+    color: gray;
+    margin: 17px 0;
+}
+/*************** RESPONSIVO | SECTION | CONQUISTA  ********************
+@media screen and (max-width: 650px){
+    .conquista-singo{
+        border-bottom: 1px solid rgb(143, 143, 248);
+        width: calc(100% / 1);
+    }
+}*/
